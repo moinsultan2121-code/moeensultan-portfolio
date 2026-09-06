@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Moeen Sultan — Performance Marketing Specialist</title>
+<meta name="description" content="Moeen Sultan, performance marketing specialist based in Lahore. Paid acquisition and CRO for 50+ brands across the US, Australia, Canada and UK.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ICON SPRITE — original simple line icons, reused via <use> -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<defs>
+<g id="i-house" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M3 11L12 4l9 7"/><path d="M5 10v9a1 1 0 0 0 1 1h4v-6h4v6h4a1 1 0 0 0 1-1v-9"/>
+</g>
+<g id="i-cpu" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+  <rect x="7" y="7" width="10" height="10" rx="1"/><rect x="10" y="10" width="4" height="4"/>
+  <path d="M9 3v3M15 3v3M9 18v3M15 18v3M3 9h3M3 15h3M18 9h3M18 15h3"/>
+</g>
+<g id="i-heart" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M12 20s-7-4.6-9.5-9A5 5 0 0 1 12 6a5 5 0 0 1 9.5 5c-2.5 4.4-9.5 9-9.5 9Z"/><path d="M4 12h3l2 4 3-8 2 4h4"/>
+</g>
+<g id="i-cross" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+  <rect x="4" y="4" width="16" height="16" rx="2"/><path d="M12 8v8M8 12h8"/>
+</g>
+<g id="i-dumbbell" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M3 12h3M18 12h3M6 9v6M18 9v6M9 12h6"/><rect x="4" y="9" width="3" height="6" rx="1"/><rect x="17" y="9" width="3" height="6" rx="1"/>
+</g>
+<g id="i-calendar" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+  <rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 9h16M8 3v4M16 3v4"/><path d="m9 14 2 2 4-4"/>
+</g>
+<g id="i-umbrella" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M4 11a8 8 0 0 1 16 0Z"/><path d="M12 11v8a2 2 0 0 1-2 2"/>
+</g>
+<g id="i-scissors" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+  <circle cx="6" cy="6" r="2.4"/><circle cx="6" cy="18" r="2.4"/><path d="M8 7.5 20 19M8 16.5 20 5"/>
+</g>
+<g id="i-flower" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+  <circle cx="12" cy="12" r="2.2"/><circle cx="12" cy="5" r="2.6"/><circle cx="12" cy="19" r="2.6"/><circle cx="5" cy="12" r="2.6"/><circle cx="19" cy="12" r="2.6"/>
+</g>
+<g id="i-droplet" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M12 3s6 7 6 11a6 6 0 0 1-12 0c0-4 6-11 6-11Z"/>
+</g>
+<g id="i-hat" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M4 15c1-3 4-5 8-5s7 2 8 5"/><path d="M2 16.5c2.5 1.2 6 2 10 2s7.5-.8 10-2"/><path d="M9 10c.5-2.5 1.5-4.5 3-6 1.5 1.5 2.5 3.5 3 6"/>
+</g>
+<g id="i-sparkle" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.5 2.5M15.5 15.5 18 18M18 6l-2.5 2.5M8.5 15.5 6 18"/>
+</g>
+<g id="i-compass" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+  <circle cx="12" cy="12" r="9"/><path d="m15 9-2 6-6 2 2-6 6-2Z"/>
+</g>
+<g id="i-pen" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M4 20l1-4L16 5l3 3L8 19l-4 1Z"/><path d="M14 7l3 3"/>
+</g>
+<g id="i-trend" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M3 17l6-6 4 4 7-8"/><path d="M15 7h5v5"/>
+</g>
+<g id="i-scan" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M4 8V5a1 1 0 0 1 1-1h3M20 8V5a1 1 0 0 0-1-1h-3M4 16v3a1 1 0 0 0 1 1h3M20 16v3a1 1 0 0 1-1 1h-3"/><path d="M4 12h16"/>
+</g>
+<g id="i-arrow" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M5 12h14M13 6l6 6-6 6"/>
+</g>
+</defs>
+</svg>
+
+<div class="grain"></div>
+
+<header class="nav" id="top">
+  <div class="wrap nav__inner">
+    <a href="#top" class="nav__logo">moeen<span class="dot">.</span></a>
+    <nav class="nav__links">
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#stack">Stack</a>
+      <a href="#perspective">Perspective</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="#contact" class="btn btn--ghost nav__cta">Say Hello</a>
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <nav class="nav__mobile" id="navMobile">
+    <a href="#about">About</a>
+    <a href="#work">Work</a>
+    <a href="#stack">Stack</a>
+    <a href="#perspective">Perspective</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <canvas id="heroCanvas" class="hero__canvas" aria-hidden="true"></canvas>
+    <div class="wrap hero__inner">
+      <div class="hero__main reveal">
+        <p class="hero__hi">Hello, I'm</p>
+        <h1 class="hero__title">Moeen Sultan</h1>
+        <p class="hero__line">I build acquisition systems brands can scale on.</p>
+        <p class="hero__role">Performance Marketing Specialist, based in Lahore</p>
+        <p class="hero__sub">A performance marketer who likes figuring out why a campaign works before scaling it. 4+ years turning ad spend into acquisition systems for 50+ brands across the US, Australia, Canada and the UK — $15M+ managed along the way.</p>
+        <a href="#about" class="btn btn--primary">Learn More</a>
+      </div>
+      <div class="hero__photo reveal">
+        <div class="hero__photo-frame">
+          <img src="assets/headshot.jpg" alt="Moeen Sultan" class="zoomed">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MY TAKE -->
+  <section class="take wrap" id="mytake">
+    <p class="eyebrow reveal"><span class="dot-accent"></span>My Take</p>
+    <h2 class="take__statement reveal">Every metric has a story.<br>Find it before you scale it.</h2>
+    <div class="take__body reveal">
+      <p>Don't just look at the number that moved. Ask why it moved — creative, audience, offer, or something upstream nobody checked yet.</p>
+      <p>Forget the campaign for a second and look at the whole path a customer actually took: click, landing page, offer, checkout, follow-up. Somewhere in there is the real bottleneck.</p>
+      <p>That's usually where the next dollar should go.</p>
+    </div>
+  </section>
+
+  <!-- AT A GLANCE -->
+  <section class="glance wrap" id="glance">
+    <p class="eyebrow reveal"><span class="dot-accent"></span>At a Glance</p>
+    <p class="glance__intro reveal">Four-plus years of accounts, spend and results across industries. Here's what that adds up to, in numbers.</p>
+    <div class="glance__grid">
+      <div class="glance__item reveal">
+        <span class="glance__num" data-count="50" data-suffix="+">0</span>
+        <span class="glance__label">Brands, paid acquisition and full-funnel CRO built for each one</span>
+      </div>
+      <div class="glance__item reveal">
+        <span class="glance__num" data-count="250" data-prefix="$" data-suffix="K+">$0</span>
+        <span class="glance__label">Managed in monthly ad spend, across every live account</span>
+      </div>
+      <div class="glance__item reveal">
+        <span class="glance__num" data-count="15" data-prefix="$" data-suffix="M+">$0</span>
+        <span class="glance__label">Total ad spend managed, career to date</span>
+      </div>
+      <div class="glance__item reveal">
+        <span class="glance__num" data-count="4" data-suffix="+">0</span>
+        <span class="glance__label">Years turning ad accounts into growth systems</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SELECTED WORK -->
+  <section class="work wrap" id="work">
+    <div class="work__head reveal">
+      <p class="eyebrow"><span class="dot-accent"></span>Selected Work</p>
+      <h2>Work worth a closer look.</h2>
+      <a href="#contact" class="work__cta">Let's talk <svg class="icon icon--sm"><use href="#i-arrow"/></svg></a>
+    </div>
+    <p class="work__sub reveal">Some of the accounts I've had a hand in. Client names stay private — the funnels, spend and results are real.</p>
+
+    <div class="work__grid">
+
+      <article class="case reveal" data-tilt style="--case-accent: var(--amber)">
+        <div class="case__cover"><svg class="icon icon--lg"><use href="#i-house"/></svg></div>
+        <p class="case__tag">Real Estate, USA</p>
+        <h3>High-Volume Lead Gen for a Real Estate Business</h3>
+        <p>Built and ran the paid acquisition engine behind a fast-moving real estate lead-gen operation — Google, Meta and a direct-sales channel working together instead of in silos. Spend now sits well into six figures a quarter, feeding a sales team with thousands of qualified leads and well over a hundred signed contracts every few months.</p>
+      </article>
+
+      <article class="case reveal" data-tilt style="--case-accent: var(--cyan)">
+        <div class="case__cover"><svg class="icon icon--lg"><use href="#i-cpu"/></svg></div>
+        <p class="case__tag">SaaS, USA</p>
+        <h3>Turning Trial Signups Into a Repeatable System</h3>
+        <p>Ran the Meta acquisition strategy for a land-intelligence platform's free trial, testing waitlist mechanics, retargeting sequences and funding-focused audiences until the cheapest, most reliable path to a qualified signup became obvious.</p>
+      </article>
+
+      <article class="case reveal" data-tilt style="--case-accent: var(--rose)">
+        <div class="case__cover"><svg class="icon icon--lg"><use href="#i-heart"/></svg></div>
+        <p class="case__tag">Mental Health Clinic, Canada</p>
+        <h3>Scaling a Booking Funnel Without Losing the Plot</h3>
+        <p>Took over an already-running Google and Meta account for a mental health clinic and nearly doubled monthly spend — while bookings grew even faster and cost per booking dropped by roughly a third. The kind of scaling that's supposed to be impossible on paper.</p>
+      </article>
+
+      <article class="case reveal" data-tilt style="--case-accent: var(--violet)">
+        <div class="case__cover"><svg class="icon icon--lg"><use href="#i-cross"/></svg></div>
+        <p class="case__tag">Men's Healthcare Clinic, Canada</p>
+        <h3>A Rotating Offer System That Never Runs Dry</h3>
+        <p>Built and ran a portfolio of Meta offers in parallel for a men's health clinic — treatments, scans, founder promotions — so the account never depended on one campaign to hit its number. Reached over half a million people and generated a couple thousand leads without the usual mid-month dip.</p>
+      </article>
+
+      <article class="case reveal" data-tilt style="--case-accent: var(--amber)">
+        <div class="case__cover"><svg class="icon icon--lg"><use href="#i-dumbbell"/></svg></div>
+        <p class="case__tag">Fitness Pre-Sale, Canada</p>
+        <h3>3,000+ Memberships Before the Doors Opened</h3>
+        <p>Built the entire acquisition strategy for a new gym location's pre-sale from zero — creative, targeting and offer testing across Google and Meta, budget shifted weekly toward whatever combination won. Doors opened with 3,000+ memberships already sold, on roughly $25K of spend.</p>
+      </article>
+
+      <article class="case reveal" data-tilt style="--case-accent: var(--cyan)">
+        <div class="case__cover"><svg class="icon icon--lg"><use href="#i-calendar"/></svg></div>
+        <p class="case__tag">Staffing Marketplace, USA</p>
+        <h3>Keeping Both Sides of a Marketplace Showing Up</h3>
+        <p>Paired CRO and product-experience fixes with a deliberately lean budget to keep a two-sided staffing marketplace signing up new businesses and new talent every month — around 60 signups on about $2K of spend, month after month.</p>
+      </article>
+
+      <article class="case reveal" data-tilt style="--case-accent: var(--violet)">
+        <div class="case__cover"><svg class="icon icon--lg"><use href="#i-umbrella"/></svg></div>
+        <p class="case__tag">Ecommerce, 5 Countries</p>
+        <h3>A 5x Return Held Across Five Currencies</h3>
+        <p>Ran paid social for an outdoor-living brand selling the same product in five markets — the US, Australia, the UK, Denmark and Germany. Same creative logic, five currencies, one consistent return: north of 5x ROAS in every single one.</p>
+      </article>
+
+      <article class="case reveal" data-tilt style="--case-accent: var(--rose)">
+        <div class="case__cover"><svg class="icon icon--lg"><use href="#i-scissors"/></svg></div>
+        <p class="case__tag">Salon Chain, Canada</p>
+        <h3>Tripling Booked Calls Without Touching the Budget</h3>
+        <p>Left the ad spend roughly where it already was and rebuilt the conversion path instead. Phone bookings roughly tripled and total client bookings grew close to a third — proof the fastest lever isn't always more budget.</p>
+      </article>
+
+      <article class="case reveal" data-tilt style="--case-accent: var(--amber)">
+        <div class="case__cover"><svg class="icon icon--lg"><use href="#i-flower"/></svg></div>
+        <p class="case__tag">Florist, Manhattan NY</p>
+        <h3>A Flower Shop Earning a 7x Return</h3>
+        <p>Ran paid social for a Manhattan flower shop on a modest local budget — around $3,500 a month — and held a 7x return on ad spend, turning a hyper-local, occasion-driven business into one of the most efficient accounts in the roster.</p>
+      </article>
+
+      <article class="case reveal" data-tilt style="--case-accent: var(--cyan)">
+        <div class="case__cover"><svg class="icon icon--lg"><use href="#i-droplet"/></svg></div>
+        <p class="case__tag">Ecommerce (Food), USA</p>
+        <h3>A Honey Brand Sweetening Its Return, 6x Over</h3>
+        <p>Built and managed paid acquisition for a honey Shopify store, spending around $4,300 a month while holding a 6x return — steady, repeatable performance for a product that lives and dies on trust and taste.</p>
+      </article>
+
+      <article class="case reveal" data-tilt style="--case-accent: var(--violet)">
+        <div class="case__cover"><svg class="icon icon--lg"><use href="#i-hat"/></svg></div>
+        <p class="case__tag">Ecommerce (Apparel), USA</p>
+        <h3>Scaling a Hat Brand to a Consistent 4x</h3>
+        <p>Managed paid acquisition for a hat brand at a higher spend level — around $6,000 a month — while holding a steady 4x return, the kind of account where the challenge shifts from finding scale to protecting it.</p>
+      </article>
+
+      <article class="case reveal" data-tilt style="--case-accent: var(--rose)">
+        <div class="case__cover"><svg class="icon icon--lg"><use href="#i-sparkle"/></svg></div>
+        <p class="case__tag">Skincare, USA</p>
+        <h3>A Skincare Brand Holding a Steady 5x</h3>
+        <p>Ran paid acquisition for a skincare brand spending around $2,500 a month, holding a consistent 5x return in one of the most competitive, most heavily-audited ad categories there is.</p>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- HOW I WORK -->
+  <section class="howiwork wrap" id="howiwork">
+    <p class="eyebrow reveal"><span class="dot-accent"></span>How I Work</p>
+    <h2 class="reveal">I like finding the real bottleneck.</h2>
+    <p class="howiwork__intro reveal">Some briefs are clear — "run these ads." Others are more like a mystery: "growth is flat, fix it." I prefer the second kind. There's usually a better question hiding underneath.</p>
+
+    <div class="pillars">
+      <div class="pillars__item reveal">
+        <svg class="icon"><use href="#i-compass"/></svg>
+        <h3>Strategy</h3>
+        <p>Funnel mapping, campaign strategy, and finding where the real constraint lives.</p>
+      </div>
+      <div class="pillars__item reveal">
+        <svg class="icon"><use href="#i-pen"/></svg>
+        <h3>Creative</h3>
+        <p>Hooks, angles, messaging, and creative testing that earns the click.</p>
+      </div>
+      <div class="pillars__item reveal">
+        <svg class="icon"><use href="#i-trend"/></svg>
+        <h3>Growth</h3>
+        <p>Paid media, CRO, and automation that turns clicks into customers.</p>
+      </div>
+      <div class="pillars__item reveal">
+        <svg class="icon"><use href="#i-scan"/></svg>
+        <h3>Analytics</h3>
+        <p>Tracking, measurement, and finding exactly where things break.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="banner wrap reveal">
+    <h2>Let's build a growth engine worth keeping.</h2>
+    <p>Based in Lahore, Pakistan.</p>
+    <a href="#contact" class="btn btn--primary">Get in Touch</a>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about wrap" id="about">
+    <p class="eyebrow reveal"><span class="dot-accent"></span>About</p>
+    <h2 class="about__title reveal">The person behind the campaigns.</h2>
+
+    <div class="about__grid">
+      <div class="about__photo reveal">
+        <img src="assets/headshot.jpg" alt="Moeen Sultan" class="zoomed">
+      </div>
+      <div class="about__content reveal">
+        <h3 class="about__subhead">I'm a performance marketer who likes figuring out why an account is stuck.</h3>
+        <p>I've spent the last 4+ years working across paid media, analytics, CRO, and whatever else a messy ad account decides to throw at me. I've managed accounts for 50+ brands across the US, Australia, Canada and the UK, led a team of media buyers, and moved over $15M in spend without losing track of what any of it was actually for.</p>
+        <p>I'm interested in the why behind the metric. Psychology, intent, and behaviour shape how I think about an ad account — I'd rather understand why someone clicked than just report that they did.</p>
+        <p>I'm not precious about the channel either. Search, social, CRM, landing pages, tracking — if it sits between spend and revenue, it's my problem to understand.</p>
+        <p>Outside work, I'm usually deep in a spreadsheet I didn't need to build, or arguing with an ad account that refuses to cooperate.</p>
+
+        <div class="about__edu">
+          <h4>Education</h4>
+          <p>BBA (Hons), Marketing — Lahore Garrison University<br>Dean's List · GPA 3.75+</p>
+          <h4>Certifications</h4>
+          <p>Google Ads Certification<br>Fundamentals of Digital Marketing — Google Skillshop<br>Facebook Media Buying Specialist</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OFF THE CLOCK -->
+  <section class="offclock wrap">
+    <p class="eyebrow reveal"><span class="dot-accent"></span>Off The Clock</p>
+    <h2 class="reveal">A spreadsheet break, occasionally successful.</h2>
+    <div class="offclock__grid">
+      <div class="offclock__tile reveal" style="--t-accent: var(--amber)"></div>
+      <div class="offclock__tile reveal" style="--t-accent: var(--cyan)"></div>
+      <div class="offclock__tile reveal" style="--t-accent: var(--violet)"></div>
+      <div class="offclock__tile reveal" style="--t-accent: var(--rose)"></div>
+      <div class="offclock__tile reveal" style="--t-accent: var(--cyan)"></div>
+      <div class="offclock__tile reveal" style="--t-accent: var(--amber)"></div>
+    </div>
+    <p class="offclock__note reveal">Swap these six tiles for your own photos whenever you've got them handy.</p>
+  </section>
+
+  <!-- STACK -->
+  <section class="stack wrap" id="stack">
+    <p class="eyebrow reveal"><span class="dot-accent"></span>Stack</p>
+    <h2 class="reveal">A fairly large collection of useful tools.</h2>
+    <p class="stack__intro reveal">What I use to plan, launch, track and scale.</p>
+    <div class="chips reveal">
+      <span>Google Ads</span><span>Meta Ads Manager</span><span>LinkedIn Campaign Manager</span><span>Snapchat Ads</span><span>TikTok Ads</span>
+      <span>GA4</span><span>Google Tag Manager</span><span>Meta Events Manager</span><span>Looker Studio</span><span>Databox</span>
+      <span>VWO</span><span>Hotjar</span><span>Microsoft Clarity</span><span>PostHog</span>
+      <span>HubSpot</span><span>Salesforce</span><span>GoHighLevel</span><span>Zoho</span><span>Klaviyo</span><span>ActiveCampaign</span><span>Mailchimp</span><span>Brevo</span>
+      <span>Semrush</span><span>Ahrefs</span><span>Ubersuggest</span>
+      <span>Adobe Premiere Pro</span><span>CapCut</span><span>Canva</span>
+      <span>ChatGPT</span><span>Claude</span>
+    </div>
+  </section>
+
+  <!-- PERSPECTIVE -->
+  <section class="perspective wrap" id="perspective">
+    <p class="eyebrow reveal"><span class="dot-accent"></span>Perspective</p>
+    <h2 class="reveal">Notes on paid media, funnels, and what actually moves numbers.</h2>
+    <div class="perspective__grid">
+      <article class="note reveal" style="--n-accent: var(--amber)"><div class="note__cover"><svg class="icon"><use href="#i-trend"/></svg></div><h3>Why most "creative fatigue" is actually audience fatigue</h3></article>
+      <article class="note reveal" style="--n-accent: var(--cyan)"><div class="note__cover"><svg class="icon"><use href="#i-scan"/></svg></div><h3>The lead you didn't qualify is a lead you paid for twice</h3></article>
+      <article class="note reveal" style="--n-accent: var(--violet)"><div class="note__cover"><svg class="icon"><use href="#i-sparkle"/></svg></div><h3>ROAS is a vanity metric until you attach a margin to it</h3></article>
+      <article class="note reveal" style="--n-accent: var(--rose)"><div class="note__cover"><svg class="icon"><use href="#i-cpu"/></svg></div><h3>What tracking debt actually costs you</h3></article>
+      <article class="note reveal" style="--n-accent: var(--cyan)"><div class="note__cover"><svg class="icon"><use href="#i-compass"/></svg></div><h3>The best performing ad is the one you didn't expect</h3></article>
+      <article class="note reveal" style="--n-accent: var(--amber)"><div class="note__cover"><svg class="icon"><use href="#i-pen"/></svg></div><h3>Full-funnel thinking, one dashboard at a time</h3></article>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact wrap" id="contact">
+    <p class="eyebrow reveal"><span class="dot-accent"></span>Contact</p>
+    <h2 class="reveal">Let's talk.</h2>
+    <p class="contact__sub reveal">Based in Lahore, Pakistan. Email's fastest, everything else works too.</p>
+    <div class="contact__links reveal">
+      <a href="mailto:moin.sultan2121@gmail.com" class="btn btn--primary">moin.sultan2121@gmail.com</a>
+      <a href="https://linkedin.com/in/moeensultan21" target="_blank" rel="noopener" class="btn btn--ghost">LinkedIn</a>
+    </div>
+    <p class="contact__note reveal">I answer these myself.</p>
+  </section>
+
+</main>
+
+<footer class="footer wrap">
+  <span>© 2026 Moeen Sultan</span>
+  <div class="footer__links">
+    <a href="https://linkedin.com/in/moeensultan21" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="mailto:moin.sultan2121@gmail.com">Email</a>
+  </div>
+</footer>
+
+<script type="module" src="script.js"></script>
+</body>
+</html>
