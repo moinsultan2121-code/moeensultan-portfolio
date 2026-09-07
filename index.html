@@ -3,16 +3,17 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Moeen Sultan — Performance Marketing Specialist</title>
+<title>Moeen Sultan, Performance Marketing Specialist</title>
 <meta name="description" content="Moeen Sultan, performance marketing specialist based in Lahore. Paid acquisition and CRO for 50+ brands across the US, Australia, Canada and UK.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://api.fontshare.com">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/geist-sans@5.0.1/index.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/geist-mono@5.0.1/index.css">
+<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=general-sans@500,600,700&display=swap">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<!-- ICON SPRITE — original simple line icons, reused via <use> -->
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
 <defs>
 <g id="i-house" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
@@ -107,13 +108,12 @@
         <h1 class="hero__title">Moeen Sultan</h1>
         <p class="hero__line">I build acquisition systems brands can scale on.</p>
         <p class="hero__role">Performance Marketing Specialist, based in Lahore</p>
-        <p class="hero__sub">A performance marketer who likes figuring out why a campaign works before scaling it. 4+ years turning ad spend into acquisition systems for 50+ brands across the US, Australia, Canada and the UK — $15M+ managed along the way.</p>
+        <p class="hero__sub">A performance marketer who likes figuring out why a campaign works before scaling it. 4+ years turning ad spend into acquisition systems for 50+ brands across the US, Australia, Canada and the UK. $15M+ managed along the way.</p>
         <a href="#about" class="btn btn--primary">Learn More</a>
       </div>
       <div class="hero__photo reveal">
-        <div class="hero__photo-frame">
-          <img src="assets/headshot.jpg" alt="Moeen Sultan" class="zoomed">
-        </div>
+        <div class="hero__photo-glow"></div>
+        <img src="assets/headshot-cutout.png" alt="Moeen Sultan" class="hero__photo-img">
       </div>
     </div>
   </section>
@@ -123,7 +123,7 @@
     <p class="eyebrow reveal"><span class="dot-accent"></span>My Take</p>
     <h2 class="take__statement reveal">Every metric has a story.<br>Find it before you scale it.</h2>
     <div class="take__body reveal">
-      <p>Don't just look at the number that moved. Ask why it moved — creative, audience, offer, or something upstream nobody checked yet.</p>
+      <p>Don't just look at the number that moved. Ask why it moved: creative, audience, offer, or something upstream nobody checked yet.</p>
       <p>Forget the campaign for a second and look at the whole path a customer actually took: click, landing page, offer, checkout, follow-up. Somewhere in there is the real bottleneck.</p>
       <p>That's usually where the next dollar should go.</p>
     </div>
@@ -134,19 +134,19 @@
     <p class="eyebrow reveal"><span class="dot-accent"></span>At a Glance</p>
     <p class="glance__intro reveal">Four-plus years of accounts, spend and results across industries. Here's what that adds up to, in numbers.</p>
     <div class="glance__grid">
-      <div class="glance__item reveal">
+      <div class="glance__item reveal" data-tilt>
         <span class="glance__num" data-count="50" data-suffix="+">0</span>
         <span class="glance__label">Brands, paid acquisition and full-funnel CRO built for each one</span>
       </div>
-      <div class="glance__item reveal">
+      <div class="glance__item reveal" data-tilt>
         <span class="glance__num" data-count="250" data-prefix="$" data-suffix="K+">$0</span>
         <span class="glance__label">Managed in monthly ad spend, across every live account</span>
       </div>
-      <div class="glance__item reveal">
+      <div class="glance__item reveal" data-tilt>
         <span class="glance__num" data-count="15" data-prefix="$" data-suffix="M+">$0</span>
         <span class="glance__label">Total ad spend managed, career to date</span>
       </div>
-      <div class="glance__item reveal">
+      <div class="glance__item reveal" data-tilt>
         <span class="glance__num" data-count="4" data-suffix="+">0</span>
         <span class="glance__label">Years turning ad accounts into growth systems</span>
       </div>
@@ -154,100 +154,209 @@
   </section>
 
   <!-- SELECTED WORK -->
-  <section class="work wrap" id="work">
-    <div class="work__head reveal">
+  <section class="work" id="work">
+    <div class="wrap work__head reveal">
       <p class="eyebrow"><span class="dot-accent"></span>Selected Work</p>
       <h2>Work worth a closer look.</h2>
       <a href="#contact" class="work__cta">Let's talk <svg class="icon icon--sm"><use href="#i-arrow"/></svg></a>
     </div>
-    <p class="work__sub reveal">Some of the accounts I've had a hand in. Client names stay private — the funnels, spend and results are real.</p>
+    <p class="wrap work__sub reveal">Some of the accounts I've had a hand in. Client names stay private, the funnels, spend and results are real.</p>
 
-    <div class="work__grid">
-
-      <article class="case reveal" data-tilt style="--case-accent: var(--amber)">
+    <div class="work__marquee">
+      <div class="work__track">
+      <article class="case" data-tilt style="--case-accent: var(--amber)">
+        <div class="case__photo" style="background-image:url('assets/case-studies/01-real-estate.jpg')"></div>
         <div class="case__cover"><svg class="icon icon--lg"><use href="#i-house"/></svg></div>
         <p class="case__tag">Real Estate, USA</p>
+        <div class="case__stat"><span>6-Figure</span><label>Quarterly ad spend</label></div>
         <h3>High-Volume Lead Gen for a Real Estate Business</h3>
-        <p>Built and ran the paid acquisition engine behind a fast-moving real estate lead-gen operation — Google, Meta and a direct-sales channel working together instead of in silos. Spend now sits well into six figures a quarter, feeding a sales team with thousands of qualified leads and well over a hundred signed contracts every few months.</p>
+        <p>Built and ran the paid acquisition engine behind a fast-moving real estate lead-gen operation. Google, Meta and a direct-sales channel working together instead of in silos, feeding a sales team with thousands of qualified leads and well over a hundred signed contracts every few months.</p>
       </article>
-
-      <article class="case reveal" data-tilt style="--case-accent: var(--cyan)">
+      <article class="case" data-tilt style="--case-accent: var(--cyan)">
+        <div class="case__photo" style="background-image:url('assets/case-studies/02-saas.jpg')"></div>
         <div class="case__cover"><svg class="icon icon--lg"><use href="#i-cpu"/></svg></div>
         <p class="case__tag">SaaS, USA</p>
+        <div class="case__stat"><span>9+</span><label>Campaign structures tested</label></div>
         <h3>Turning Trial Signups Into a Repeatable System</h3>
-        <p>Ran the Meta acquisition strategy for a land-intelligence platform's free trial, testing waitlist mechanics, retargeting sequences and funding-focused audiences until the cheapest, most reliable path to a qualified signup became obvious.</p>
+        <p>Ran the Meta acquisition strategy for a land-intelligence platform&#x27;s free trial, testing waitlist mechanics, retargeting sequences and funding-focused audiences until the cheapest, most reliable path to a qualified signup became obvious.</p>
       </article>
-
-      <article class="case reveal" data-tilt style="--case-accent: var(--rose)">
+      <article class="case" data-tilt style="--case-accent: var(--rose)">
+        <div class="case__photo" style="background-image:url('assets/case-studies/03-mental-health.jpg')"></div>
         <div class="case__cover"><svg class="icon icon--lg"><use href="#i-heart"/></svg></div>
         <p class="case__tag">Mental Health Clinic, Canada</p>
+        <div class="case__stat"><span>~3x</span><label>Booking growth in 4 months</label></div>
         <h3>Scaling a Booking Funnel Without Losing the Plot</h3>
-        <p>Took over an already-running Google and Meta account for a mental health clinic and nearly doubled monthly spend — while bookings grew even faster and cost per booking dropped by roughly a third. The kind of scaling that's supposed to be impossible on paper.</p>
+        <p>Took over an already-running Google and Meta account for a mental health clinic and nearly doubled monthly spend while bookings grew even faster and cost per booking dropped by roughly a third. The kind of scaling that&#x27;s supposed to be impossible on paper.</p>
       </article>
-
-      <article class="case reveal" data-tilt style="--case-accent: var(--violet)">
+      <article class="case" data-tilt style="--case-accent: var(--violet)">
+        <div class="case__photo" style="background-image:url('assets/case-studies/04-mens-health.jpg')"></div>
         <div class="case__cover"><svg class="icon icon--lg"><use href="#i-cross"/></svg></div>
-        <p class="case__tag">Men's Healthcare Clinic, Canada</p>
+        <p class="case__tag">Men&#x27;s Healthcare Clinic, Canada</p>
+        <div class="case__stat"><span>2,000+</span><label>Leads generated</label></div>
         <h3>A Rotating Offer System That Never Runs Dry</h3>
-        <p>Built and ran a portfolio of Meta offers in parallel for a men's health clinic — treatments, scans, founder promotions — so the account never depended on one campaign to hit its number. Reached over half a million people and generated a couple thousand leads without the usual mid-month dip.</p>
+        <p>Built and ran a portfolio of Meta offers in parallel for a men&#x27;s health clinic. Treatments, scans, founder promotions, so the account never depended on one campaign to hit its number. Reached over half a million people without the usual mid-month dip.</p>
       </article>
-
-      <article class="case reveal" data-tilt style="--case-accent: var(--amber)">
+      <article class="case" data-tilt style="--case-accent: var(--amber)">
+        <div class="case__photo" style="background-image:url('assets/case-studies/05-fitness.jpg')"></div>
         <div class="case__cover"><svg class="icon icon--lg"><use href="#i-dumbbell"/></svg></div>
         <p class="case__tag">Fitness Pre-Sale, Canada</p>
+        <div class="case__stat"><span>3,000+</span><label>Memberships sold pre-launch</label></div>
         <h3>3,000+ Memberships Before the Doors Opened</h3>
-        <p>Built the entire acquisition strategy for a new gym location's pre-sale from zero — creative, targeting and offer testing across Google and Meta, budget shifted weekly toward whatever combination won. Doors opened with 3,000+ memberships already sold, on roughly $25K of spend.</p>
+        <p>Built the entire acquisition strategy for a new gym location&#x27;s pre-sale from zero. Creative, targeting and offer testing across Google and Meta, budget shifted weekly toward whatever combination won, on roughly $25K of spend.</p>
       </article>
-
-      <article class="case reveal" data-tilt style="--case-accent: var(--cyan)">
+      <article class="case" data-tilt style="--case-accent: var(--cyan)">
+        <div class="case__photo" style="background-image:url('assets/case-studies/06-staffing.jpg')"></div>
         <div class="case__cover"><svg class="icon icon--lg"><use href="#i-calendar"/></svg></div>
         <p class="case__tag">Staffing Marketplace, USA</p>
+        <div class="case__stat"><span>~60/mo</span><label>Consistent signups</label></div>
         <h3>Keeping Both Sides of a Marketplace Showing Up</h3>
-        <p>Paired CRO and product-experience fixes with a deliberately lean budget to keep a two-sided staffing marketplace signing up new businesses and new talent every month — around 60 signups on about $2K of spend, month after month.</p>
+        <p>Paired CRO and product-experience fixes with a deliberately lean budget to keep a two-sided staffing marketplace signing up new businesses and new talent every month, on about $2K of spend, month after month.</p>
       </article>
-
-      <article class="case reveal" data-tilt style="--case-accent: var(--violet)">
+      <article class="case" data-tilt style="--case-accent: var(--violet)">
+        <div class="case__photo" style="background-image:url('assets/case-studies/07-outdoor-living.jpg')"></div>
         <div class="case__cover"><svg class="icon icon--lg"><use href="#i-umbrella"/></svg></div>
         <p class="case__tag">Ecommerce, 5 Countries</p>
+        <div class="case__stat"><span>5x+</span><label>ROAS across every market</label></div>
         <h3>A 5x Return Held Across Five Currencies</h3>
-        <p>Ran paid social for an outdoor-living brand selling the same product in five markets — the US, Australia, the UK, Denmark and Germany. Same creative logic, five currencies, one consistent return: north of 5x ROAS in every single one.</p>
+        <p>Ran paid social for an outdoor-living brand selling the same product in five markets: the US, Australia, the UK, Denmark and Germany. Same creative logic, five currencies, one consistent return.</p>
       </article>
-
-      <article class="case reveal" data-tilt style="--case-accent: var(--rose)">
+      <article class="case" data-tilt style="--case-accent: var(--rose)">
+        <div class="case__photo" style="background-image:url('assets/case-studies/08-salon.jpg')"></div>
         <div class="case__cover"><svg class="icon icon--lg"><use href="#i-scissors"/></svg></div>
         <p class="case__tag">Salon Chain, Canada</p>
+        <div class="case__stat"><span>~3x</span><label>Booked calls</label></div>
         <h3>Tripling Booked Calls Without Touching the Budget</h3>
-        <p>Left the ad spend roughly where it already was and rebuilt the conversion path instead. Phone bookings roughly tripled and total client bookings grew close to a third — proof the fastest lever isn't always more budget.</p>
+        <p>Left the ad spend roughly where it already was and rebuilt the conversion path instead. Phone bookings roughly tripled and total client bookings grew close to a third. Proof the fastest lever isn&#x27;t always more budget.</p>
       </article>
-
-      <article class="case reveal" data-tilt style="--case-accent: var(--amber)">
+      <article class="case" data-tilt style="--case-accent: var(--amber)">
+        <div class="case__photo" style="background-image:url('assets/case-studies/09-florist.jpg')"></div>
         <div class="case__cover"><svg class="icon icon--lg"><use href="#i-flower"/></svg></div>
         <p class="case__tag">Florist, Manhattan NY</p>
+        <div class="case__stat"><span>7x</span><label>Return on ad spend</label></div>
         <h3>A Flower Shop Earning a 7x Return</h3>
-        <p>Ran paid social for a Manhattan flower shop on a modest local budget — around $3,500 a month — and held a 7x return on ad spend, turning a hyper-local, occasion-driven business into one of the most efficient accounts in the roster.</p>
+        <p>Ran paid social for a Manhattan flower shop on a modest local budget, around $3,500 a month, and held a 7x return, turning a hyper-local, occasion-driven business into one of the most efficient accounts in the roster.</p>
       </article>
-
-      <article class="case reveal" data-tilt style="--case-accent: var(--cyan)">
+      <article class="case" data-tilt style="--case-accent: var(--cyan)">
+        <div class="case__photo" style="background-image:url('assets/case-studies/10-honey.jpg')"></div>
         <div class="case__cover"><svg class="icon icon--lg"><use href="#i-droplet"/></svg></div>
         <p class="case__tag">Ecommerce (Food), USA</p>
+        <div class="case__stat"><span>6x</span><label>Return on ad spend</label></div>
         <h3>A Honey Brand Sweetening Its Return, 6x Over</h3>
-        <p>Built and managed paid acquisition for a honey Shopify store, spending around $4,300 a month while holding a 6x return — steady, repeatable performance for a product that lives and dies on trust and taste.</p>
+        <p>Built and managed paid acquisition for a honey Shopify store, spending around $4,300 a month while holding a 6x return. Steady, repeatable performance for a product that lives and dies on trust and taste.</p>
       </article>
-
-      <article class="case reveal" data-tilt style="--case-accent: var(--violet)">
+      <article class="case" data-tilt style="--case-accent: var(--violet)">
+        <div class="case__photo" style="background-image:url('assets/case-studies/11-apparel-hat.jpg')"></div>
         <div class="case__cover"><svg class="icon icon--lg"><use href="#i-hat"/></svg></div>
         <p class="case__tag">Ecommerce (Apparel), USA</p>
+        <div class="case__stat"><span>4x</span><label>Return at higher spend</label></div>
         <h3>Scaling a Hat Brand to a Consistent 4x</h3>
-        <p>Managed paid acquisition for a hat brand at a higher spend level — around $6,000 a month — while holding a steady 4x return, the kind of account where the challenge shifts from finding scale to protecting it.</p>
+        <p>Managed paid acquisition for a hat brand at a higher spend level, around $6,000 a month, while holding a steady 4x return. The kind of account where the challenge shifts from finding scale to protecting it.</p>
       </article>
-
-      <article class="case reveal" data-tilt style="--case-accent: var(--rose)">
+      <article class="case" data-tilt style="--case-accent: var(--rose)">
+        <div class="case__photo" style="background-image:url('assets/case-studies/12-skincare.jpg')"></div>
         <div class="case__cover"><svg class="icon icon--lg"><use href="#i-sparkle"/></svg></div>
         <p class="case__tag">Skincare, USA</p>
+        <div class="case__stat"><span>5x</span><label>Return on ad spend</label></div>
         <h3>A Skincare Brand Holding a Steady 5x</h3>
         <p>Ran paid acquisition for a skincare brand spending around $2,500 a month, holding a consistent 5x return in one of the most competitive, most heavily-audited ad categories there is.</p>
       </article>
-
+      <article class="case" data-tilt style="--case-accent: var(--amber)">
+        <div class="case__photo" style="background-image:url('assets/case-studies/01-real-estate.jpg')"></div>
+        <div class="case__cover"><svg class="icon icon--lg"><use href="#i-house"/></svg></div>
+        <p class="case__tag">Real Estate, USA</p>
+        <div class="case__stat"><span>6-Figure</span><label>Quarterly ad spend</label></div>
+        <h3>High-Volume Lead Gen for a Real Estate Business</h3>
+        <p>Built and ran the paid acquisition engine behind a fast-moving real estate lead-gen operation. Google, Meta and a direct-sales channel working together instead of in silos, feeding a sales team with thousands of qualified leads and well over a hundred signed contracts every few months.</p>
+      </article>
+      <article class="case" data-tilt style="--case-accent: var(--cyan)">
+        <div class="case__photo" style="background-image:url('assets/case-studies/02-saas.jpg')"></div>
+        <div class="case__cover"><svg class="icon icon--lg"><use href="#i-cpu"/></svg></div>
+        <p class="case__tag">SaaS, USA</p>
+        <div class="case__stat"><span>9+</span><label>Campaign structures tested</label></div>
+        <h3>Turning Trial Signups Into a Repeatable System</h3>
+        <p>Ran the Meta acquisition strategy for a land-intelligence platform&#x27;s free trial, testing waitlist mechanics, retargeting sequences and funding-focused audiences until the cheapest, most reliable path to a qualified signup became obvious.</p>
+      </article>
+      <article class="case" data-tilt style="--case-accent: var(--rose)">
+        <div class="case__photo" style="background-image:url('assets/case-studies/03-mental-health.jpg')"></div>
+        <div class="case__cover"><svg class="icon icon--lg"><use href="#i-heart"/></svg></div>
+        <p class="case__tag">Mental Health Clinic, Canada</p>
+        <div class="case__stat"><span>~3x</span><label>Booking growth in 4 months</label></div>
+        <h3>Scaling a Booking Funnel Without Losing the Plot</h3>
+        <p>Took over an already-running Google and Meta account for a mental health clinic and nearly doubled monthly spend while bookings grew even faster and cost per booking dropped by roughly a third. The kind of scaling that&#x27;s supposed to be impossible on paper.</p>
+      </article>
+      <article class="case" data-tilt style="--case-accent: var(--violet)">
+        <div class="case__photo" style="background-image:url('assets/case-studies/04-mens-health.jpg')"></div>
+        <div class="case__cover"><svg class="icon icon--lg"><use href="#i-cross"/></svg></div>
+        <p class="case__tag">Men&#x27;s Healthcare Clinic, Canada</p>
+        <div class="case__stat"><span>2,000+</span><label>Leads generated</label></div>
+        <h3>A Rotating Offer System That Never Runs Dry</h3>
+        <p>Built and ran a portfolio of Meta offers in parallel for a men&#x27;s health clinic. Treatments, scans, founder promotions, so the account never depended on one campaign to hit its number. Reached over half a million people without the usual mid-month dip.</p>
+      </article>
+      <article class="case" data-tilt style="--case-accent: var(--amber)">
+        <div class="case__photo" style="background-image:url('assets/case-studies/05-fitness.jpg')"></div>
+        <div class="case__cover"><svg class="icon icon--lg"><use href="#i-dumbbell"/></svg></div>
+        <p class="case__tag">Fitness Pre-Sale, Canada</p>
+        <div class="case__stat"><span>3,000+</span><label>Memberships sold pre-launch</label></div>
+        <h3>3,000+ Memberships Before the Doors Opened</h3>
+        <p>Built the entire acquisition strategy for a new gym location&#x27;s pre-sale from zero. Creative, targeting and offer testing across Google and Meta, budget shifted weekly toward whatever combination won, on roughly $25K of spend.</p>
+      </article>
+      <article class="case" data-tilt style="--case-accent: var(--cyan)">
+        <div class="case__photo" style="background-image:url('assets/case-studies/06-staffing.jpg')"></div>
+        <div class="case__cover"><svg class="icon icon--lg"><use href="#i-calendar"/></svg></div>
+        <p class="case__tag">Staffing Marketplace, USA</p>
+        <div class="case__stat"><span>~60/mo</span><label>Consistent signups</label></div>
+        <h3>Keeping Both Sides of a Marketplace Showing Up</h3>
+        <p>Paired CRO and product-experience fixes with a deliberately lean budget to keep a two-sided staffing marketplace signing up new businesses and new talent every month, on about $2K of spend, month after month.</p>
+      </article>
+      <article class="case" data-tilt style="--case-accent: var(--violet)">
+        <div class="case__photo" style="background-image:url('assets/case-studies/07-outdoor-living.jpg')"></div>
+        <div class="case__cover"><svg class="icon icon--lg"><use href="#i-umbrella"/></svg></div>
+        <p class="case__tag">Ecommerce, 5 Countries</p>
+        <div class="case__stat"><span>5x+</span><label>ROAS across every market</label></div>
+        <h3>A 5x Return Held Across Five Currencies</h3>
+        <p>Ran paid social for an outdoor-living brand selling the same product in five markets: the US, Australia, the UK, Denmark and Germany. Same creative logic, five currencies, one consistent return.</p>
+      </article>
+      <article class="case" data-tilt style="--case-accent: var(--rose)">
+        <div class="case__photo" style="background-image:url('assets/case-studies/08-salon.jpg')"></div>
+        <div class="case__cover"><svg class="icon icon--lg"><use href="#i-scissors"/></svg></div>
+        <p class="case__tag">Salon Chain, Canada</p>
+        <div class="case__stat"><span>~3x</span><label>Booked calls</label></div>
+        <h3>Tripling Booked Calls Without Touching the Budget</h3>
+        <p>Left the ad spend roughly where it already was and rebuilt the conversion path instead. Phone bookings roughly tripled and total client bookings grew close to a third. Proof the fastest lever isn&#x27;t always more budget.</p>
+      </article>
+      <article class="case" data-tilt style="--case-accent: var(--amber)">
+        <div class="case__photo" style="background-image:url('assets/case-studies/09-florist.jpg')"></div>
+        <div class="case__cover"><svg class="icon icon--lg"><use href="#i-flower"/></svg></div>
+        <p class="case__tag">Florist, Manhattan NY</p>
+        <div class="case__stat"><span>7x</span><label>Return on ad spend</label></div>
+        <h3>A Flower Shop Earning a 7x Return</h3>
+        <p>Ran paid social for a Manhattan flower shop on a modest local budget, around $3,500 a month, and held a 7x return, turning a hyper-local, occasion-driven business into one of the most efficient accounts in the roster.</p>
+      </article>
+      <article class="case" data-tilt style="--case-accent: var(--cyan)">
+        <div class="case__photo" style="background-image:url('assets/case-studies/10-honey.jpg')"></div>
+        <div class="case__cover"><svg class="icon icon--lg"><use href="#i-droplet"/></svg></div>
+        <p class="case__tag">Ecommerce (Food), USA</p>
+        <div class="case__stat"><span>6x</span><label>Return on ad spend</label></div>
+        <h3>A Honey Brand Sweetening Its Return, 6x Over</h3>
+        <p>Built and managed paid acquisition for a honey Shopify store, spending around $4,300 a month while holding a 6x return. Steady, repeatable performance for a product that lives and dies on trust and taste.</p>
+      </article>
+      <article class="case" data-tilt style="--case-accent: var(--violet)">
+        <div class="case__photo" style="background-image:url('assets/case-studies/11-apparel-hat.jpg')"></div>
+        <div class="case__cover"><svg class="icon icon--lg"><use href="#i-hat"/></svg></div>
+        <p class="case__tag">Ecommerce (Apparel), USA</p>
+        <div class="case__stat"><span>4x</span><label>Return at higher spend</label></div>
+        <h3>Scaling a Hat Brand to a Consistent 4x</h3>
+        <p>Managed paid acquisition for a hat brand at a higher spend level, around $6,000 a month, while holding a steady 4x return. The kind of account where the challenge shifts from finding scale to protecting it.</p>
+      </article>
+      <article class="case" data-tilt style="--case-accent: var(--rose)">
+        <div class="case__photo" style="background-image:url('assets/case-studies/12-skincare.jpg')"></div>
+        <div class="case__cover"><svg class="icon icon--lg"><use href="#i-sparkle"/></svg></div>
+        <p class="case__tag">Skincare, USA</p>
+        <div class="case__stat"><span>5x</span><label>Return on ad spend</label></div>
+        <h3>A Skincare Brand Holding a Steady 5x</h3>
+        <p>Ran paid acquisition for a skincare brand spending around $2,500 a month, holding a consistent 5x return in one of the most competitive, most heavily-audited ad categories there is.</p>
+      </article>
+      </div>
     </div>
   </section>
 
@@ -255,25 +364,25 @@
   <section class="howiwork wrap" id="howiwork">
     <p class="eyebrow reveal"><span class="dot-accent"></span>How I Work</p>
     <h2 class="reveal">I like finding the real bottleneck.</h2>
-    <p class="howiwork__intro reveal">Some briefs are clear — "run these ads." Others are more like a mystery: "growth is flat, fix it." I prefer the second kind. There's usually a better question hiding underneath.</p>
+    <p class="howiwork__intro reveal">Some briefs are clear, "run these ads." Others are more like a mystery: "growth is flat, fix it." I prefer the second kind. There's usually a better question hiding underneath.</p>
 
     <div class="pillars">
-      <div class="pillars__item reveal">
+      <div class="pillars__item reveal" data-tilt>
         <svg class="icon"><use href="#i-compass"/></svg>
         <h3>Strategy</h3>
         <p>Funnel mapping, campaign strategy, and finding where the real constraint lives.</p>
       </div>
-      <div class="pillars__item reveal">
+      <div class="pillars__item reveal" data-tilt>
         <svg class="icon"><use href="#i-pen"/></svg>
         <h3>Creative</h3>
         <p>Hooks, angles, messaging, and creative testing that earns the click.</p>
       </div>
-      <div class="pillars__item reveal">
+      <div class="pillars__item reveal" data-tilt>
         <svg class="icon"><use href="#i-trend"/></svg>
         <h3>Growth</h3>
         <p>Paid media, CRO, and automation that turns clicks into customers.</p>
       </div>
-      <div class="pillars__item reveal">
+      <div class="pillars__item reveal" data-tilt>
         <svg class="icon"><use href="#i-scan"/></svg>
         <h3>Analytics</h3>
         <p>Tracking, measurement, and finding exactly where things break.</p>
@@ -283,6 +392,7 @@
 
   <!-- CTA BANNER -->
   <section class="banner wrap reveal">
+    <canvas id="bannerCanvas" class="banner__canvas" aria-hidden="true"></canvas>
     <h2>Let's build a growth engine worth keeping.</h2>
     <p>Based in Lahore, Pakistan.</p>
     <a href="#contact" class="btn btn--primary">Get in Touch</a>
@@ -295,38 +405,23 @@
 
     <div class="about__grid">
       <div class="about__photo reveal">
-        <img src="assets/headshot.jpg" alt="Moeen Sultan" class="zoomed">
+        <img src="assets/headshot-cutout.png" alt="Moeen Sultan">
       </div>
       <div class="about__content reveal">
         <h3 class="about__subhead">I'm a performance marketer who likes figuring out why an account is stuck.</h3>
         <p>I've spent the last 4+ years working across paid media, analytics, CRO, and whatever else a messy ad account decides to throw at me. I've managed accounts for 50+ brands across the US, Australia, Canada and the UK, led a team of media buyers, and moved over $15M in spend without losing track of what any of it was actually for.</p>
-        <p>I'm interested in the why behind the metric. Psychology, intent, and behaviour shape how I think about an ad account — I'd rather understand why someone clicked than just report that they did.</p>
-        <p>I'm not precious about the channel either. Search, social, CRM, landing pages, tracking — if it sits between spend and revenue, it's my problem to understand.</p>
-        <p>Outside work, I'm usually deep in a spreadsheet I didn't need to build, or arguing with an ad account that refuses to cooperate.</p>
+        <p>I'm interested in the why behind the metric. Psychology, intent, and behaviour shape how I think about an ad account. I'd rather understand why someone clicked than just report that they did.</p>
+        <p>Lately I'm obsessed with AI, not the hype part, the practical part. How agentic workflows and automation can take an account from reactive to actually ahead of the curve. n8n, agent chains, automated reporting: if it saves an hour of manual work, I want it running quietly in the background.</p>
+        <p>I'm not precious about the channel either. Search, social, CRM, landing pages, tracking: if it sits between spend and revenue, it's my problem to understand.</p>
 
         <div class="about__edu">
           <h4>Education</h4>
-          <p>BBA (Hons), Marketing — Lahore Garrison University<br>Dean's List · GPA 3.75+</p>
+          <p>BBA (Hons), Marketing, Lahore Garrison University<br>Dean's List · GPA 3.75+</p>
           <h4>Certifications</h4>
-          <p>Google Ads Certification<br>Fundamentals of Digital Marketing — Google Skillshop<br>Facebook Media Buying Specialist</p>
+          <p>Google Ads Certification<br>Fundamentals of Digital Marketing, Google Skillshop<br>Facebook Media Buying Specialist</p>
         </div>
       </div>
     </div>
-  </section>
-
-  <!-- OFF THE CLOCK -->
-  <section class="offclock wrap">
-    <p class="eyebrow reveal"><span class="dot-accent"></span>Off The Clock</p>
-    <h2 class="reveal">A spreadsheet break, occasionally successful.</h2>
-    <div class="offclock__grid">
-      <div class="offclock__tile reveal" style="--t-accent: var(--amber)"></div>
-      <div class="offclock__tile reveal" style="--t-accent: var(--cyan)"></div>
-      <div class="offclock__tile reveal" style="--t-accent: var(--violet)"></div>
-      <div class="offclock__tile reveal" style="--t-accent: var(--rose)"></div>
-      <div class="offclock__tile reveal" style="--t-accent: var(--cyan)"></div>
-      <div class="offclock__tile reveal" style="--t-accent: var(--amber)"></div>
-    </div>
-    <p class="offclock__note reveal">Swap these six tiles for your own photos whenever you've got them handy.</p>
   </section>
 
   <!-- STACK -->
@@ -334,14 +429,224 @@
     <p class="eyebrow reveal"><span class="dot-accent"></span>Stack</p>
     <h2 class="reveal">A fairly large collection of useful tools.</h2>
     <p class="stack__intro reveal">What I use to plan, launch, track and scale.</p>
-    <div class="chips reveal">
-      <span>Google Ads</span><span>Meta Ads Manager</span><span>LinkedIn Campaign Manager</span><span>Snapchat Ads</span><span>TikTok Ads</span>
-      <span>GA4</span><span>Google Tag Manager</span><span>Meta Events Manager</span><span>Looker Studio</span><span>Databox</span>
-      <span>VWO</span><span>Hotjar</span><span>Microsoft Clarity</span><span>PostHog</span>
-      <span>HubSpot</span><span>Salesforce</span><span>GoHighLevel</span><span>Zoho</span><span>Klaviyo</span><span>ActiveCampaign</span><span>Mailchimp</span><span>Brevo</span>
-      <span>Semrush</span><span>Ahrefs</span><span>Ubersuggest</span>
-      <span>Adobe Premiere Pro</span><span>CapCut</span><span>Canva</span>
-      <span>ChatGPT</span><span>Claude</span>
+    <div class="tools reveal">
+      <div class="tool" data-tilt>
+        <span class="tool__badge">
+          <img src="https://cdn.simpleicons.org/googleads" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <span class="tool__fallback">G</span>
+        </span>
+        <span>Google Ads</span>
+      </div>
+      <div class="tool" data-tilt>
+        <span class="tool__badge">
+          <img src="https://cdn.simpleicons.org/meta" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <span class="tool__fallback">M</span>
+        </span>
+        <span>Meta Ads Manager</span>
+      </div>
+      <div class="tool" data-tilt>
+        <span class="tool__badge">
+          <img src="https://cdn.simpleicons.org/linkedin" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <span class="tool__fallback">L</span>
+        </span>
+        <span>LinkedIn Campaign Manager</span>
+      </div>
+      <div class="tool" data-tilt>
+        <span class="tool__badge">
+          <img src="https://cdn.simpleicons.org/snapchat" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <span class="tool__fallback">S</span>
+        </span>
+        <span>Snapchat Ads</span>
+      </div>
+      <div class="tool" data-tilt>
+        <span class="tool__badge">
+          <img src="https://cdn.simpleicons.org/tiktok" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <span class="tool__fallback">T</span>
+        </span>
+        <span>TikTok Ads</span>
+      </div>
+      <div class="tool" data-tilt>
+        <span class="tool__badge">
+          <img src="https://cdn.simpleicons.org/googleanalytics" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <span class="tool__fallback">G</span>
+        </span>
+        <span>GA4</span>
+      </div>
+      <div class="tool" data-tilt>
+        <span class="tool__badge">
+          <img src="https://cdn.simpleicons.org/googletagmanager" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <span class="tool__fallback">G</span>
+        </span>
+        <span>Google Tag Manager</span>
+      </div>
+      <div class="tool" data-tilt>
+        <span class="tool__badge">
+          <img src="https://cdn.simpleicons.org/meta" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <span class="tool__fallback">M</span>
+        </span>
+        <span>Meta Events Manager</span>
+      </div>
+      <div class="tool" data-tilt>
+        <span class="tool__badge">
+          <img src="https://cdn.simpleicons.org/looker" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <span class="tool__fallback">L</span>
+        </span>
+        <span>Looker Studio</span>
+      </div>
+      <div class="tool" data-tilt>
+        <span class="tool__badge">
+          <img src="https://logo.clearbit.com/databox.com" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <span class="tool__fallback">D</span>
+        </span>
+        <span>Databox</span>
+      </div>
+      <div class="tool" data-tilt>
+        <span class="tool__badge">
+          <img src="https://logo.clearbit.com/vwo.com" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <span class="tool__fallback">V</span>
+        </span>
+        <span>VWO</span>
+      </div>
+      <div class="tool" data-tilt>
+        <span class="tool__badge">
+          <img src="https://cdn.simpleicons.org/hotjar" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <span class="tool__fallback">H</span>
+        </span>
+        <span>Hotjar</span>
+      </div>
+      <div class="tool" data-tilt>
+        <span class="tool__badge">
+          <img src="https://logo.clearbit.com/clarity.microsoft.com" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <span class="tool__fallback">M</span>
+        </span>
+        <span>Microsoft Clarity</span>
+      </div>
+      <div class="tool" data-tilt>
+        <span class="tool__badge">
+          <img src="https://cdn.simpleicons.org/posthog" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <span class="tool__fallback">P</span>
+        </span>
+        <span>PostHog</span>
+      </div>
+      <div class="tool" data-tilt>
+        <span class="tool__badge">
+          <img src="https://cdn.simpleicons.org/hubspot" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <span class="tool__fallback">H</span>
+        </span>
+        <span>HubSpot</span>
+      </div>
+      <div class="tool" data-tilt>
+        <span class="tool__badge">
+          <img src="https://cdn.simpleicons.org/salesforce" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <span class="tool__fallback">S</span>
+        </span>
+        <span>Salesforce</span>
+      </div>
+      <div class="tool" data-tilt>
+        <span class="tool__badge">
+          <img src="https://logo.clearbit.com/gohighlevel.com" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <span class="tool__fallback">G</span>
+        </span>
+        <span>GoHighLevel</span>
+      </div>
+      <div class="tool" data-tilt>
+        <span class="tool__badge">
+          <img src="https://cdn.simpleicons.org/zoho" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <span class="tool__fallback">Z</span>
+        </span>
+        <span>Zoho</span>
+      </div>
+      <div class="tool" data-tilt>
+        <span class="tool__badge">
+          <img src="https://cdn.simpleicons.org/klaviyo" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <span class="tool__fallback">K</span>
+        </span>
+        <span>Klaviyo</span>
+      </div>
+      <div class="tool" data-tilt>
+        <span class="tool__badge">
+          <img src="https://cdn.simpleicons.org/activecampaign" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <span class="tool__fallback">A</span>
+        </span>
+        <span>ActiveCampaign</span>
+      </div>
+      <div class="tool" data-tilt>
+        <span class="tool__badge">
+          <img src="https://cdn.simpleicons.org/mailchimp" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <span class="tool__fallback">M</span>
+        </span>
+        <span>Mailchimp</span>
+      </div>
+      <div class="tool" data-tilt>
+        <span class="tool__badge">
+          <img src="https://cdn.simpleicons.org/brevo" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <span class="tool__fallback">B</span>
+        </span>
+        <span>Brevo</span>
+      </div>
+      <div class="tool" data-tilt>
+        <span class="tool__badge">
+          <img src="https://cdn.simpleicons.org/semrush" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <span class="tool__fallback">S</span>
+        </span>
+        <span>Semrush</span>
+      </div>
+      <div class="tool" data-tilt>
+        <span class="tool__badge">
+          <img src="https://cdn.simpleicons.org/ahrefs" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <span class="tool__fallback">A</span>
+        </span>
+        <span>Ahrefs</span>
+      </div>
+      <div class="tool" data-tilt>
+        <span class="tool__badge">
+          <img src="https://logo.clearbit.com/ubersuggest.com" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <span class="tool__fallback">U</span>
+        </span>
+        <span>Ubersuggest</span>
+      </div>
+      <div class="tool" data-tilt>
+        <span class="tool__badge">
+          <img src="https://cdn.simpleicons.org/adobepremierepro" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <span class="tool__fallback">A</span>
+        </span>
+        <span>Adobe Premiere Pro</span>
+      </div>
+      <div class="tool" data-tilt>
+        <span class="tool__badge">
+          <img src="https://cdn.simpleicons.org/capcut" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <span class="tool__fallback">C</span>
+        </span>
+        <span>CapCut</span>
+      </div>
+      <div class="tool" data-tilt>
+        <span class="tool__badge">
+          <img src="https://cdn.simpleicons.org/canva" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <span class="tool__fallback">C</span>
+        </span>
+        <span>Canva</span>
+      </div>
+      <div class="tool" data-tilt>
+        <span class="tool__badge">
+          <img src="https://cdn.simpleicons.org/openai" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <span class="tool__fallback">C</span>
+        </span>
+        <span>ChatGPT</span>
+      </div>
+      <div class="tool" data-tilt>
+        <span class="tool__badge">
+          <img src="https://cdn.simpleicons.org/anthropic" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <span class="tool__fallback">C</span>
+        </span>
+        <span>Claude</span>
+      </div>
+      <div class="tool" data-tilt>
+        <span class="tool__badge">
+          <img src="https://cdn.simpleicons.org/n8n" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <span class="tool__fallback">n</span>
+        </span>
+        <span>n8n</span>
+      </div>
     </div>
   </section>
 
@@ -350,12 +655,36 @@
     <p class="eyebrow reveal"><span class="dot-accent"></span>Perspective</p>
     <h2 class="reveal">Notes on paid media, funnels, and what actually moves numbers.</h2>
     <div class="perspective__grid">
-      <article class="note reveal" style="--n-accent: var(--amber)"><div class="note__cover"><svg class="icon"><use href="#i-trend"/></svg></div><h3>Why most "creative fatigue" is actually audience fatigue</h3></article>
-      <article class="note reveal" style="--n-accent: var(--cyan)"><div class="note__cover"><svg class="icon"><use href="#i-scan"/></svg></div><h3>The lead you didn't qualify is a lead you paid for twice</h3></article>
-      <article class="note reveal" style="--n-accent: var(--violet)"><div class="note__cover"><svg class="icon"><use href="#i-sparkle"/></svg></div><h3>ROAS is a vanity metric until you attach a margin to it</h3></article>
-      <article class="note reveal" style="--n-accent: var(--rose)"><div class="note__cover"><svg class="icon"><use href="#i-cpu"/></svg></div><h3>What tracking debt actually costs you</h3></article>
-      <article class="note reveal" style="--n-accent: var(--cyan)"><div class="note__cover"><svg class="icon"><use href="#i-compass"/></svg></div><h3>The best performing ad is the one you didn't expect</h3></article>
-      <article class="note reveal" style="--n-accent: var(--amber)"><div class="note__cover"><svg class="icon"><use href="#i-pen"/></svg></div><h3>Full-funnel thinking, one dashboard at a time</h3></article>
+      <article class="note reveal" data-tilt style="--n-accent: var(--amber)">
+        <div class="note__cover"><svg class="icon"><use href="#i-trend"/></svg></div>
+        <h3>Why most "creative fatigue" is actually audience fatigue</h3>
+        <p>The ad looks tired, but more often it's the audience that's worn out, not the creative. Refresh the segment before you refresh the hook.</p>
+      </article>
+      <article class="note reveal" data-tilt style="--n-accent: var(--cyan)">
+        <div class="note__cover"><svg class="icon"><use href="#i-scan"/></svg></div>
+        <h3>The lead you didn't qualify is a lead you paid for twice</h3>
+        <p>Every unqualified lead gets paid for once at the click and again when someone wastes an hour on it. Qualification is a budget decision, not just a CRM one.</p>
+      </article>
+      <article class="note reveal" data-tilt style="--n-accent: var(--violet)">
+        <div class="note__cover"><svg class="icon"><use href="#i-sparkle"/></svg></div>
+        <h3>ROAS is a vanity metric until you attach a margin to it</h3>
+        <p>A 5x return on a product with thin margin can lose money quietly. Know the margin before you celebrate the multiple.</p>
+      </article>
+      <article class="note reveal" data-tilt style="--n-accent: var(--rose)">
+        <div class="note__cover"><svg class="icon"><use href="#i-cpu"/></svg></div>
+        <h3>What tracking debt actually costs you</h3>
+        <p>Broken pixels and mismatched conversions don't just skew the report, they misdirect the algorithm for weeks before anyone notices. Fix tracking first, optimize second.</p>
+      </article>
+      <article class="note reveal" data-tilt style="--n-accent: var(--cyan)">
+        <div class="note__cover"><svg class="icon"><use href="#i-compass"/></svg></div>
+        <h3>The best performing ad is the one you didn't expect</h3>
+        <p>The ad you were sure would flop is usually the one worth scaling. Let the data overrule your taste, every time.</p>
+      </article>
+      <article class="note reveal" data-tilt style="--n-accent: var(--amber)">
+        <div class="note__cover"><svg class="icon"><use href="#i-pen"/></svg></div>
+        <h3>Full-funnel thinking, one dashboard at a time</h3>
+        <p>A single view from click to close changes what you optimize for. Most accounts are still guessing because nobody built that dashboard yet.</p>
+      </article>
     </div>
   </section>
 
@@ -364,9 +693,27 @@
     <p class="eyebrow reveal"><span class="dot-accent"></span>Contact</p>
     <h2 class="reveal">Let's talk.</h2>
     <p class="contact__sub reveal">Based in Lahore, Pakistan. Email's fastest, everything else works too.</p>
-    <div class="contact__links reveal">
-      <a href="mailto:moin.sultan2121@gmail.com" class="btn btn--primary">moin.sultan2121@gmail.com</a>
-      <a href="https://linkedin.com/in/moeensultan21" target="_blank" rel="noopener" class="btn btn--ghost">LinkedIn</a>
+    <div class="contact__list reveal">
+      <a href="mailto:moin.sultan2121@gmail.com" class="contact__row">
+        <span class="contact__label">Email</span>
+        <span class="contact__value">moin.sultan2121@gmail.com</span>
+        <svg class="icon icon--sm contact__arrow"><use href="#i-arrow"/></svg>
+      </a>
+      <a href="https://linkedin.com/in/moeensultan21" target="_blank" rel="noopener" class="contact__row">
+        <span class="contact__label">LinkedIn</span>
+        <span class="contact__value">linkedin.com/in/moeensultan21</span>
+        <svg class="icon icon--sm contact__arrow"><use href="#i-arrow"/></svg>
+      </a>
+      <a href="https://www.instagram.com/moeen.sultan21/" target="_blank" rel="noopener" class="contact__row">
+        <span class="contact__label">Instagram</span>
+        <span class="contact__value">@moeen.sultan21</span>
+        <svg class="icon icon--sm contact__arrow"><use href="#i-arrow"/></svg>
+      </a>
+      <a href="https://wa.me/923061000375" target="_blank" rel="noopener" class="contact__row">
+        <span class="contact__label">WhatsApp</span>
+        <span class="contact__value">+92 306 1000375</span>
+        <svg class="icon icon--sm contact__arrow"><use href="#i-arrow"/></svg>
+      </a>
     </div>
     <p class="contact__note reveal">I answer these myself.</p>
   </section>
@@ -377,6 +724,8 @@
   <span>© 2026 Moeen Sultan</span>
   <div class="footer__links">
     <a href="https://linkedin.com/in/moeensultan21" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="https://www.instagram.com/moeen.sultan21/" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://wa.me/923061000375" target="_blank" rel="noopener">WhatsApp</a>
     <a href="mailto:moin.sultan2121@gmail.com">Email</a>
   </div>
 </footer>

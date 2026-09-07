@@ -1,5 +1,3 @@
-import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js';
-
 const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
 /* ---------- mobile nav ---------- */
@@ -71,9 +69,30 @@ if (!prefersReducedMotion) {
   });
 }
 
-/* ---------- three.js hero particle network ---------- */
-const canvas = document.getElementById('heroCanvas');
-if (canvas && !prefersReducedMotion) {
+/* ---------- three.js: shared loader for hero + banner effects ---------- */
+/* Loaded dynamically and wrapped in try/catch on purpose: if the CDN is
+   blocked or slow, the rest of the page (nav, content, reveals, counters)
+   must keep working. This is the only part allowed to fail silently. */
+let threePromise;
+function loadThree() {
+  if (!threePromise) {
+    threePromise = import('https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js');
+  }
+  return threePromise;
+}
+
+async function initHero3D() {
+  const canvas = document.getElementById('heroCanvas');
+  if (!canvas || prefersReducedMotion) return;
+
+  let THREE;
+  try {
+    THREE = await loadThree();
+  } catch (err) {
+    canvas.style.display = 'none';
+    return;
+  }
+
   const heroSection = canvas.closest('.hero');
 
   const renderer = new THREE.WebGLRenderer({ canvas, alpha: true, antialias: true });
@@ -95,7 +114,6 @@ if (canvas && !prefersReducedMotion) {
   const pointsMat = new THREE.PointsMaterial({ color: 0x46e0c4, size: 0.06, transparent: true, opacity: 0.85 });
   const points = new THREE.Points(pointsGeo, pointsMat);
 
-  // build line segments between nearby points, computed once
   const linePositions = [];
   const threshold = 3.1;
   for (let i = 0; i < POINT_COUNT; i++) {
@@ -148,7 +166,6 @@ if (canvas && !prefersReducedMotion) {
   }
   animate();
 
-  // pause when hero is off-screen to save battery
   const visObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) { if (!raf) animate(); }
@@ -157,3 +174,88 @@ if (canvas && !prefersReducedMotion) {
   }, { threshold: 0 });
   visObserver.observe(heroSection);
 }
+
+initHero3D().catch(() => {
+  const canvas = document.getElementById('heroCanvas');
+  if (canvas) canvas.style.display = 'none';
+});
+
+/* ---------- three.js banner drifting orbs ---------- */
+/* Same fail-quiet pattern as the hero: a subtle floating point cloud
+   behind the CTA banner. Lighter than the hero (fewer points, no lines,
+   slow drift, no mouse interaction) since it just needs to add texture,
+   not compete with the headline. */
+async function initBanner3D() {
+  const canvas = document.getElementById('bannerCanvas');
+  if (!canvas || prefersReducedMotion) return;
+
+  let THREE;
+  try {
+    THREE = await loadThree();
+  } catch (err) {
+    canvas.style.display = 'none';
+    return;
+  }
+
+  const section = canvas.closest('.banner');
+
+  const renderer = new THREE.WebGLRenderer({ canvas, alpha: true, antialias: true });
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+
+  const scene = new THREE.Scene();
+  const camera = new THREE.PerspectiveCamera(50, 1, 0.1, 100);
+  camera.position.z = 7;
+
+  const POINT_COUNT = 46;
+  const positions = new Float32Array(POINT_COUNT * 3);
+  const speeds = new Float32Array(POINT_COUNT);
+  for (let i = 0; i < POINT_COUNT; i++) {
+    positions[i * 3] = (Math.random() - 0.5) * 14;
+    positions[i * 3 + 1] = (Math.random() - 0.5) * 7;
+    positions[i * 3 + 2] = (Math.random() - 0.5) * 6;
+    speeds[i] = 0.04 + Math.random() * 0.08;
+  }
+  const geo = new THREE.BufferGeometry();
+  geo.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+  const mat = new THREE.PointsMaterial({ color: 0xff7a33, size: 0.09, transparent: true, opacity: 0.6 });
+  const points = new THREE.Points(geo, mat);
+  scene.add(points);
+
+  function resize() {
+    const w = section.clientWidth;
+    const h = section.clientHeight;
+    renderer.setSize(w, h, false);
+    camera.aspect = w / h;
+    camera.updateProjectionMatrix();
+  }
+  resize();
+  window.addEventListener('resize', resize);
+
+  let raf, t = 0;
+  function animate() {
+    raf = requestAnimationFrame(animate);
+    t += 0.01;
+    const pos = geo.attributes.position;
+    for (let i = 0; i < POINT_COUNT; i++) {
+      pos.array[i * 3 + 1] += Math.sin(t + i) * 0.0015;
+      pos.array[i * 3] += Math.cos(t * 0.6 + i) * 0.0012;
+    }
+    pos.needsUpdate = true;
+    points.rotation.y += 0.0006;
+    renderer.render(scene, camera);
+  }
+  animate();
+
+  const visObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) { if (!raf) animate(); }
+      else { cancelAnimationFrame(raf); raf = null; }
+    });
+  }, { threshold: 0 });
+  visObserver.observe(section);
+}
+
+initBanner3D().catch(() => {
+  const canvas = document.getElementById('bannerCanvas');
+  if (canvas) canvas.style.display = 'none';
+});
